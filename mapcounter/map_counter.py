@@ -103,7 +103,7 @@ class CountMappability(object):
                 try:
                     pos, _, _, _, _, _, hits = line.split()
                 except:
-                    print line
+                    print(line)
                     raise
                 chrom, pos = pos.split(":")
 
