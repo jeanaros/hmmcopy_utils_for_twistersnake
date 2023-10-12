@@ -121,8 +121,8 @@ class FastaToRead(object):
     
                 for pos, seq in self.sliding_window(chromosome, 0, end):
                     seq = "".join(seq)
-                    outfile.write("".join([">", chromosome,":", str(pos)]) + "\n")
-                    outfile.write(seq+"\n")
+                    outfile.write(f'{"".join([">", chromosome,":", str(pos)])}\n'.encode())
+                    outfile.write("{seq}\n".encode())
             
 
 def parse_args():
