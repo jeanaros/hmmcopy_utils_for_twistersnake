@@ -51,7 +51,7 @@ class bowtieIndex(object):
 
         cmd = " ".join(cmd)
 
-        print cmd
+        print(cmd)
 
         cmd = Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True)
           
